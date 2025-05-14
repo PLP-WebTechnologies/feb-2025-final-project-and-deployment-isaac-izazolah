@@ -1,0 +1,333 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f3fd; /* Light blue background */
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px; /* Space for fixed navbar */
+}
+
+h1, h2, h3, p {
+    margin: 20px 0;
+}
+
+/* Navbar Styles */
+nav {
+    background: linear-gradient(90deg, #ff7f32, #ffb84d); /* Orange gradient navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #ff5722; /* Darker orange on hover */
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+/* Hero Section (Home) */
+#home {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to top, #f4f8ff, rgba(255, 255, 255, 0.8)); /* Gradient background */
+    margin-top: 60px;
+    border-bottom: 3px solid #ff7f32;
+}
+
+#home h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+#home p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#home button {
+    background-color: #ff7f32;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#home button:hover {
+    background-color: #fff;
+    color: #ff7f32;
+    border: 2px solid #ff7f32;
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 20px;
+    border: 5px solid #ff7f32;
+}
+
+/* Education Section */
+#education {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#education h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+#education p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.download-btn {
+    background-color: #ff7f32;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #fff;
+    color: #ff7f32;
+    border: 2px solid #ff7f32;
+    transform: translateY(-5px);
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid #ff7f32;
+}
+
+.project:hover {
+    transform: translateY(-10px); /* Elevate on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #333;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #555;
+}
+
+.project a {
+    color: #ff7f32;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #ff5722; /* Darker orange on hover */
+}
+
+/* Services Section */
+#services {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+#services h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#services ul li {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+#services ul li:hover {
+    color: #ff7f32;
+}
+
+/* Donate Section */
+#donate {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+#donate h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#donate form input,
+#donate form button {
+    padding: 12px 20px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+#donate form input {
+    background-color: #f4f8ff;
+    color: #333;
+}
+
+#donate form button {
+    background-color: #ff7f32;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#donate form button:hover {
+    background-color: #fff;
+    color: #ff7f32;
+    border: 2px solid #ff7f32;
+    transform: translateY(-5px);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home h1 {
+        font-size: 2.5em;
+    }
+
+    #home p {
+        font-size: 1em;
+    }
+
+    #about h2,
+    #education h2,
+    #services h2,
+    #projects h2 {
+        font-size: 2em;
+    }
+}

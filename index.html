@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Izazolah - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#donate">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I am Isaac Izazolah, a Software Engineer specializing in modern web technologies.</p>
+        <button onclick="location.href='#contact'">Hire Me</button>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate about leveraging technology to create innovative solutions for businesses and communities.</p>
+        <img src="images/about_me.jpg" alt="Isaac Izazolah" class="profile-pic">
+    </section>
+    
+    <section id="education">
+        <h2>Education Background</h2>
+        <p>Bachelor's Degree in Computer Science from XYZ University.</p>
+        <a href="cv/isaac_izazolah_cv.pdf" download class="download-btn">Download My CV</a>
+    </section>
+    
+    <section id="interests">
+        <h2>Interests</h2>
+        <ul>
+            <li>Artificial Intelligence</li>
+            <li>Web Development</li>
+            <li>Internet of Things (IoT)</li>
+            <li>Cybersecurity</li>
+            <li>Blockchain Technology</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/task_manager.jpg" alt="Task Manager">
+                <h3><a href="projects/task_manager.html" target="_blank">Task Manager</a></h3>
+                <p>A web application for managing tasks efficiently with features like real-time updates and collaborative task management.</p>
+            </div>
+            <div class="project">
+                <img src="images/chat_app.jpg" alt="Chat App">
+                <h3><a href="projects/chat_app.html" target="_blank">Chat App</a></h3>
+                <p>A real-time encrypted messaging application supporting private and group chats.</p>
+            </div>
+            <div class="project">
+                <img src="images/inventory_system.jpg" alt="Inventory System">
+                <h3><a href="projects/inventory_system.html" target="_blank">Inventory Management System</a></h3>
+                <p>A cloud-based solution for tracking stock levels, managing sales, and generating reports.</p>
+            </div>
+            <div class="project">
+                <img src="images/ecommerce.jpg" alt="E-commerce Platform">
+                <h3><a href="projects/ecommerce.html" target="_blank">E-commerce Platform</a></h3>
+                <p>A secure online store with payment gateway integration and customer analytics.</p>
+            </div>
+            <div class="project">
+                <img src="images/healthcare_system.jpg" alt="Healthcare System">
+                <h3><a href="projects/healthcare_system.html" target="_blank">Healthcare Management System</a></h3>
+                <p>A patient management system with appointment scheduling and digital health records.</p>
+            </div>
+            <div class="project">
+                <img src="images/elearning.jpg" alt="Online Learning Platform">
+                <h3><a href="projects/elearning.html" target="_blank">Online Learning Platform</a></h3>
+                <p>An e-learning system with video courses, quizzes, and progress tracking.</p>
+            </div>
+            <div class="project">
+                <img src="images/event_booking.jpg" alt="Event Booking System">
+                <h3><a href="projects/event_booking.html" target="_blank">Event Booking System</a></h3>
+                <p>A system for users to book, manage, and track event tickets online.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>My Services</h2>
+        <ul>
+            <li>Web Development - Modern, responsive, and secure web applications.</li>
+            <li>Mobile App Development - User-friendly apps for Android and iOS.</li>
+            <li>Database Management - Efficient and scalable database solutions.</li>
+            <li>UI/UX Design - Enhancing user experiences through design principles.</li>
+            <li>Cloud Computing Solutions - Deploying and managing cloud applications.</li>
+            <li>Cybersecurity Implementation - Protecting digital assets with best practices.</li>
+            <li>AI & Machine Learning - Intelligent automation and predictive solutions.</li>
+            <li>Blockchain Development - Secure decentralized applications.</li>
+            <li>IoT Solutions - Connecting smart devices for enhanced automation.</li>
+        </ul>
+    </section>
+    
+    <section id="donate">
+        <h2>Support My Work</h2>
+        <p>If you would like to support my projects, consider making a donation.</p>
+        <form action="donate.php" method="POST">
+            <input type="text" name="donor_name" placeholder="Your Name" required>
+            <input type="number" name="amount" placeholder="Donation Amount" required>
+            <button type="submit">Donate Now</button>
+        </form>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="contact.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Isaac Izazolah. All rights reserved.</p>
+    </footer>
+</body>
+</html>
